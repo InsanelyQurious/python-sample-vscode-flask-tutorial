@@ -1,9 +1,9 @@
 workflow "Publish to App Service" {
   on = "push"
-  resolves = ["Azure Login"]
+  resolves = ["Deploy to Web App"]
 }
 
- action "Azure Login" {
+action "Azure Login" {
   uses = "Azure/github-actions/login@master"
   env = {
     AZURE_SUBSCRIPTION = "Microsoft Azure Internal Consumption"
