@@ -16,6 +16,6 @@ action "Deploy to Web App" {
   needs = ["Azure Login"]
   env = {
     AZURE_APP_NAME = "pydemo01"
-    AZURE_APP_PACKAGE_LOCATION = "."
+    AZURE_APP_PACKAGE_LOCATION = "./"
   }
 }
